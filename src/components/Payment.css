@@ -1,0 +1,134 @@
+
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 300px;
+}
+
+button:disabled {
+  background-color:red;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: green;
+}
+
+@media (max-width: 800px) {
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.payment-card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+
+.header {
+  background-color: #d5fbdc;
+  padding: 10px;
+  text-align: center;
+}
+
+.header p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.header .brand {
+  color: #63bb4c;
+}
+
+.product {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #e6f7ff;
+}
+
+.product img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 26px;
+  font-weight: 1000;
+  color: #286e17;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #ff5722;
+  margin: 5px 0 0 0;
+  font-weight: 800;
+}
+
+.payment-methods {
+  z-index: 2;
+  padding: 30px 50px;
+  background-color: blue;
+}
+
+
+.founder-info {
+  background-color: #004a87;
+  text-align: center;
+  padding: 5px;
+
+}
+
+.founder-info img{
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.background .person {
+  position: relative;
+  margin-right:162%;
+  top: 35.3%;
+  transform: translateY(-50%);
+}

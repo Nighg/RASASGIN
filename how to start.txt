@@ -1,0 +1,2 @@
+1.Open razorpay-integration in terminal from react folder
+2.Write command in terminal npm.start  eg.  cd react>razorpay-integration>npm start
